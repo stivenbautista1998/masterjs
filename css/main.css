@@ -34,6 +34,10 @@ body {
     padding: 0 2em;
 }
 
+.header-index {
+    height: 10em;
+}
+
 .header-menu {
     width: 162px;
 }
@@ -66,6 +70,10 @@ body {
     font-size: 1.5rem;
     display: inline-block;
     color: #C14744;
+}
+
+.header-title-big {
+    font-size: 2.5rem;
 }
 
 .login-button, .logout-button {
