@@ -190,6 +190,20 @@ body {
     text-transform: capitalize;
 }
 
+.waves-shape-wrap {
+    height: 200px;
+    z-index: 3;
+    transform: translateZ(0);
+    vertical-align: baseline;
+    font-size: 100%;
+}
+.waves-shape {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+}
 
 .footer-section {
     background: aqua;

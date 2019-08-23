@@ -17,6 +17,11 @@
                     <title>menu</title>
                     <path fill="#C14744" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
                 </symbol>
+                <symbol id="icon-olas" viewBox="0 0 1000 300" preserveAspectRatio="none">
+                    <path fill="#c14744" d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path> 
+                    <path fill="#c14744" d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path> 
+                    <path fill="#c14744" d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </symbol>
             </defs>
         </svg>
     </div>
@@ -31,11 +36,9 @@
                 <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
             </button>            
         </div>
-
         <div class="header-center">
             <h1 class="header-title header-title-big">MasterJS</h1>
         </div>
-        
         <div class="header-right">           
             <button class="login-button">
                 <a class="link" href="./views/login.html">login</a>
@@ -45,29 +48,7 @@
             </button>
         </div>
     </header>
-    <style>
-        .nectar-shape-divider-wrap {
-            height: 200px;
-            z-index: 3;
-            transform: translateZ(0);
 
-            vertical-align: baseline;
-            font-family: inherit;
-            font-weight: inherit;
-            font-style: inherit;
-            font-size: 100%;
-            outline: 0;
-            padding: 0;
-            margin: 0;
-        }
-        .nectar-shape-divider {
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            height: 100%;
-            position: absolute;
-        }
-    </style>
     <section class="section section-start">
         <div class="wrapper">
             <p class="section-start__text">start seeing the best javascript functionalities</p>
@@ -84,17 +65,15 @@
                 </span>
             </a>
         </div>
-        <div class="nectar-shape-divider-wrap" data-front="" data-style="waves_opacity_alt" data-position="bottom" bis_skin_checked="1">
-            <svg class="nectar-shape-divider" fill="#c14744" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">  
-                <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path> 
-                <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path> 
-                <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
-            </svg>
+        <div class="waves-shape-wrap" data-front="" data-style="waves_opacity_alt" data-position="bottom" bis_skin_checked="1">
+            <svg class="waves-shape" ><use xlink:href="#icon-olas"></use></svg>
         </div>
     </section>
+
     <section class="section section-tech">
         <p class="section-tech__text">section tech</p>
     </section>
+    
     <footer class="footer-section">
         <ul class="footer-section__list list">
             <li class="footer-section__list-item">stiven bautista</li>            
