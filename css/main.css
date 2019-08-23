@@ -1,0 +1,310 @@
+.nada {
+    box-sizing: border-box;
+    vertical-align: middle; /*Determina la alineación vertical de los contenidos de un elemento*/
+    line-height: normal; /*Permite establecer la altura de línea de los elementos*/
+    box-shadow: azure;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-indent: 1em; /*Tabula desde la izquierda la primera línea del texto original*/
+    letter-spacing: .2em; /*Permite establecer el espacio entre las letras que forman las palabras del texto*/
+    word-spacing: .4em; /*Permite establecer el espacio entre las palabras que forman el texto*/
+    white-space: normal; /*Establece el tratamiento de los espacios en blanco del texto*/
+}
+/* Pseudo-elementos css  :first-line, :first-letter */
+/* Pseudo-clases css :link, :visited, :hover, :active | :focus */
+/* :nth-child(odd) or (even) or numero (2)  || :first-child or :last-child */
+/* (vh) medida view height del viuport, (vw) medida view weight del viuport */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 2em;
+}
+
+.header-menu {
+    width: 162px;
+}
+
+.header__menu-button {
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 120px; */
+    /* margin-right: 1.5em; */
+}
+
+.header-center {
+    /* margin-left: 1.5em; */
+}
+
+.header-title {
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #C14744;
+}
+
+.login-button, .logout-button {
+    border: 2px solid #C14744;
+    color: #C14744;
+    border-radius: 5px;
+    margin: 0 .2em;
+    padding: .5em 1.2em;
+    background: #000;
+}
+
+.header-form {
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.header-search {
+    width: 250px;
+    padding: .4em;
+    border: none;
+    border-radius: 3px;
+}
+
+.header__img {
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid #C14744;
+    cursor: pointer;
+}
+
+.header-nav {
+
+}
+
+.header__btn-add, .header__btn-projects {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.list {
+    list-style-type: none;
+    margin: auto 2em;
+    padding: 0;
+}
+
+.header-nav-list {
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+}
+
+.header-nav-list-link {
+    font-size: 1rem;
+    display: inline-block;
+    padding: .5em;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #C14744;
+}
+
+.wrapper {
+    border: 1px solid red;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.section-start {
+    font-size: 3em;
+    color: #C14744;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-section {
+    background: aqua;
+    text-align: center;
+    background: #000;
+    font-size: 1rem;
+}
+
+.footer-section__list {
+    padding: 1em;
+}
+
+.footer-section__list-item {
+    display: inline-block;
+    margin: 1em;
+    color: #C14744;
+}
+
+.section-login {
+    background: #2d253a url("./image/font-login.jpg") no-repeat center bottom;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-login__all {
+    width: 400px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    margin: auto;
+    font-family: fantasy;
+}
+
+.login-top {
+    background: #ffc600;
+    border-bottom: 5px solid #F3C010;
+    padding: 1em;
+    position: relative;
+}
+
+.login-form {
+    padding: 1em;
+    text-align: center;
+    background: #fff;
+    position: relative;
+}
+
+.login-image-content {
+    border: 5px solid rgba(255, 198, 0, 0.4);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    left: 155px;
+    top: -45px;
+}
+
+.login-title {
+    font-size: 2.5rem;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-family: fantasy;
+    color: #2d253a;
+}
+
+.login-form__user, .login-form__password, .login-form__submit, .login-form__cancel {
+    display: inline-block;
+    border: 2px solid #99B0F0;
+    border-radius: 5px;
+    padding: .7em;
+    margin: .5em;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.login-form__user, .login-form__password {
+    width: 320px;
+    background: rgba(160, 150, 150, 0.2);
+    font-family: fantasy;
+}
+
+.login-form__user:focus, .login-form__password:focus {
+    border: 2px solid #4D78F0;
+    outline: none; /* quita el borde por defecto del input */    
+}
+
+.link-btn-cancel {
+    color: #2d253a;
+}
+
+.login-form__submit, .login-form__cancel {
+    width: 45%;
+    height: 50px;
+    cursor: pointer;
+    background: #ffc600;
+    margin: .5em 0;
+    border: 2px solid #F3C010;
+    border-radius: 2px;
+    font-family: fantasy;
+    font-size: 1.2rem;
+    color: #2d253a;
+    padding: .3em;
+}
+
+.login-form__submit:focus, .login-form__cancel:focus, .login-form__submit:hover, .login-form__cancel:hover {
+    border: 2px solid #4D78F0;
+}
+
+.copyright-message {
+    color: #FFF;
+    position: absolute;
+    font-family: cursive;
+    font-size: .7rem;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+}
+
+.error-message {
+    color: #FFF;
+    position: absolute;
+    font-size: 1rem;
+    font-family: fantasy;
+    letter-spacing: .4px;
+    padding: .5em 2em;
+    border-radius: 5px;
+    background: #1e8449;
+    text-align: center;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    transition: .5s;
+    left: 0%;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+    left: 40%;
+}
+
+.element-absolute {
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    top: 9px;
+}
+
+@media screen and (min-width: 500px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    .icon-menu {
+        visibility: hidden;
+    }
+}

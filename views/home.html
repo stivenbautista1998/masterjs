@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MasterJS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/svg-style.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+    <div class="svg">
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <symbol id="icon-stack" viewBox="0 0 32 32">
+                    <title>stack</title>
+                    <path fill="#C14744" d="M32 10l-16-8-16 8 16 8 16-8zM16 4.655l10.689 5.345-10.689 5.345-10.689-5.345 10.689-5.345zM28.795 14.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398zM28.795 20.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398z"></path>
+                </symbol>
+
+                <symbol id="icon-plus" viewBox="0 0 32 32">
+                    <title>plus</title>
+                    <path fill="#C14744" d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                </symbol>
+            </defs>
+        </svg>
+    </div>
+
+    <header class="header">
+        <div class="header-left">
+            <h1 class="header-title">
+                <a class="link" href="../index.html">MasterJS</a>
+            </h1>
+            <form class="header-form" action="/search" method="get">
+                <input class="header-search" type="text" value="" placeholder="search...">
+            </form>
+            
+            <ul class="header-nav list">
+                <li class="header-nav-list"><a class="header-nav-list-link link" href="#">home</a></li>
+                <li class="header-nav-list"><a class="header-nav-list-link link" href="#">projects</a></li>
+                <li class="header-nav-list"><a class="header-nav-list-link link" href="#">tools</a></li>
+                <li class="header-nav-list"><a class="header-nav-list-link link" href="#">contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="header-right">           
+            <button class="header__btn-projects">
+                <svg class="icon icon-stack"><use xlink:href="#icon-stack"></use></svg>
+            </button>
+            <button class="header__btn-add">
+                <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+            </button>            
+            <img class="header__img" src="../image/user.png" alt="usuario actual">
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="paginacion">
+            <span class="izquierda">
+                &laquo; Anterior
+            </span>
+            <span class="derecha">
+                Siguiente &raquo;
+            </span>
+        </div> 
+    </div>
+    <footer class="footer-section">
+        <ul class="footer-section__list list">
+            <li class="footer-section__list-item">stiven bautista</li>            
+            <li class="footer-section__list-item">stivenb1994@gmail.com</li>
+            <li class="footer-section__list-item">copyright 2019 &copy; masterjs.com</li>
+        </ul>
+    </footer>
+</body>
+</html>
