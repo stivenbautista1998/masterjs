@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import "variables.css";
 
 .nada {
     box-sizing: border-box;
     vertical-align: middle; /*Determina la alineación vertical de los contenidos de un elemento*/
     line-height: normal; /*Permite establecer la altura de línea de los elementos*/
     box-shadow: azure;
-    text-decoration: none;
-    text-transform: capitalize;
     text-indent: 1em; /*Tabula desde la izquierda la primera línea del texto original*/
     letter-spacing: .2em; /*Permite establecer el espacio entre las letras que forman las palabras del texto*/
     word-spacing: .4em; /*Permite establecer el espacio entre las palabras que forman el texto*/
@@ -19,22 +17,25 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 10px;
+    font-size: var(--font-size-main);
     height: 100vh;
-    font-family: 'Times New Roman', Times, serif;
-    /* display: flex;
+    font-family: var(--font-family-logo);
+}
+
+.centrado-total {
+    display: flex;
     flex-direction: column;
-    justify-content: start; */
+    justify-content: space-between;
 }
 
 .header {
-    background-color: #000;
+    background-color: var(--bg-color-first);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     padding: 0 2em;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid var(--bg-color-third);
 }
 
 .header-index {
@@ -70,9 +71,9 @@ body {
 }
 
 .header-title {
-    font-size: 1.5rem;
+    font-size: var(--font-size-logo);
     display: inline-block;
-    color: #C14744;
+    color: var(--bg-color-second);
 }
 
 .header-title-big {
@@ -80,12 +81,23 @@ body {
 }
 
 .login-button, .logout-button {
-    border: 2px solid #C14744;
-    color: #C14744;
+    border: 2px solid var(--bg-color-second);
+    color: var(--bg-color-second);
+    cursor: pointer;
+    text-transform: capitalize;
     border-radius: 5px;
-    margin: 0 .2em;
-    padding: .5em 1.2em;
-    background: #000;
+    margin: var(--margin-little-button);
+    padding: var(--padding-little-button);
+    font-family: var(--font-family-main);
+}
+
+.bg-color-black {
+    background-color: var(--bg-color-first);
+}
+
+.bg-color-white {
+    background-color: var(--bg-color-third);
+    color: var(--bg-color-first);
 }
 
 .header-form {
@@ -103,7 +115,7 @@ body {
 .header__img {
     width: 35px;
     border-radius: 50%;
-    border: 2px solid #C14744;
+    border: 2px solid var(--bg-color-second);
     cursor: pointer;
 }
 
@@ -130,7 +142,7 @@ body {
 }
 
 .header-nav-list-link {
-    font-size: 1rem;
+    font-size: var(--font-size-nav);
     display: inline-block;
     padding: .5em;
     font-weight: bold;
@@ -139,27 +151,27 @@ body {
 
 .wrapper {
     border: 1px solid red;
-    max-width: 1024px;
+    max-width: var(--screen-large);
     margin: 0 auto;
 }
 
 .section {
-    font-size: 2rem;
+    font-size: var(--font-size-title-section);
     text-align: center;
-    font-family: 'Fredoka One', cursive;
+    font-family: var(--font-family-main);
 }
 
 .section-start {
     padding-top: 3em;
-    color: #C14744;
+    color: var(--bg-color-second);
     text-transform: uppercase;
-    background-color: #000;
+    background-color: var(--bg-color-first);
 }
 
 .section-tech {
     border: 1px solid #000;
-    color: #000;
-    background-color: #C14744;
+    color: var(--bg-color-first);
+    background-color: var(--bg-color-second);
     text-transform: capitalize;
 }
 
@@ -174,31 +186,30 @@ body {
 .link {
     text-decoration: none;
     text-transform: capitalize;
-    color: #C14744;
+    color: var(--bg-color-second);
 }
 
 .white {
-    color: #FFF;
+    color: var(--bg-color-third);
 }
 
 .section-start__link {
     display: inline-block;
-    margin: 1em 0;
+    margin: 1em .5em;
 }
 
 .section-start__button {
-    border: 2px solid #FFF;
+    border: 2px solid var(--bg-color-third);
     padding: .5em 1em;
-    font-size: 1rem;
-    color: #000;
+    font-size: var(--font-size-normal-button);
+    color: var(--bg-color-first);
     border-radius: 5px;
-    margin: 0 1em;
     text-transform: capitalize;
-    background-color: #C14744;
+    background-color: var(--bg-color-second);
 }
 
 .section-start__button:hover {
-    transform: scale(0.5);
+    transform: scale(1.1);
 }
 
 .waves-shape-wrap {
@@ -217,9 +228,8 @@ body {
 }
 
 .footer-section {
-    background: aqua;
     text-align: center;
-    background: #000;
+    background-color: var(--bg-color-first);
     font-size: 1rem;
 }
 
@@ -230,7 +240,7 @@ body {
 .footer-section__list-item {
     display: inline-block;
     margin: 1em;
-    color: #C14744;
+    color: var(--bg-color-second);
 }
 
 .section-login {
@@ -242,18 +252,18 @@ body {
     align-items: center;
 }
 
-.login-login__all {
+.login-all {
     width: 400px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 4px;  /*No logrado aun*/
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
     margin: auto;
-    font-family: fantasy;
+    font-family: var(--font-family-main);
 }
 
 .login-top {
-    background: #ffc600;
-    border-bottom: 5px solid #F3C010;
+    background-color: var(--bg-color-quarter);
+    border-bottom: 5px solid var(--bg-color-shadow-quarter);
     padding: 1em;
     position: relative;
 }
@@ -261,7 +271,7 @@ body {
 .login-form {
     padding: 1em;
     text-align: center;
-    background: #fff;
+    background-color: var(--bg-color-third);
     position: relative;
 }
 
@@ -274,64 +284,55 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+    background-color: var(--bg-color-third);
     left: 155px;
     top: -45px;
 }
 
 .login-title {
-    font-size: 2.5rem;
+    font-size: var(--font-size-title-form);
     margin-top: 1em;
     margin-bottom: .5em;
-    font-family: fantasy;
-    color: #2d253a;
+    color: var(--bg-color-first);
 }
 
 .login-form__user, .login-form__password, .login-form__submit, .login-form__cancel {
     display: inline-block;
-    border: 2px solid #99B0F0;
+    border: 2px solid var(--border-color-input);
     border-radius: 5px;
-    padding: .7em;
-    margin: .5em;
+    padding: var(--padding-input);
+    margin: var(--margin-input);
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: var(--font-size-input-form);
 }
 
 .login-form__user, .login-form__password {
     width: 320px;
-    background: rgba(160, 150, 150, 0.2);
-    font-family: fantasy;
-}
-
-.login-form__user:focus, .login-form__password:focus {
-    border: 2px solid #4D78F0;
-    outline: none; /* quita el borde por defecto del input */    
-}
-
-.link-btn-cancel {
-    color: #2d253a;
+    background: var(--bg-color-input);
+    font-family: var(--font-family-main);
 }
 
 .login-form__submit, .login-form__cancel {
     width: 45%;
     height: 50px;
     cursor: pointer;
-    background: #ffc600;
+    background-color: var(--bg-color-quarter);
     margin: .5em 0;
-    border: 2px solid #F3C010;
+    border: 2px solid var(--bg-color-shadow-quarter);
     border-radius: 2px;
-    font-family: fantasy;
+    font-family: var(--font-family-main);
     font-size: 1.2rem;
-    color: #2d253a;
+    color: var(--bg-color-first);
     padding: .3em;
 }
 
-.login-form__submit:focus, .login-form__cancel:focus, .login-form__submit:hover, .login-form__cancel:hover {
-    border: 2px solid #4D78F0;
+.login-form__user:focus, .login-form__password:focus, .login-form__submit:focus, .login-form__cancel:focus, .login-form__submit:hover, .login-form__cancel:hover {
+    border: 2px solid var(--border-color-imput-focus);
+    outline: none; /* quita el borde por defecto del input */    
 }
 
 .copyright-message {
-    color: #FFF;
+    color: var(--bg-color-third);
     position: absolute;
     font-family: cursive;
     font-size: .7rem;
@@ -341,14 +342,14 @@ body {
 }
 
 .error-message {
-    color: #FFF;
+    color: var(--bg-color-third);
     position: absolute;
     font-size: 1rem;
-    font-family: fantasy;
+    font-family: var(--font-family-main);
     letter-spacing: .4px;
     padding: .5em 2em;
     border-radius: 5px;
-    background: #1e8449;
+    background-color: var(--bg-color-popup);
     text-align: center;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
     transition: .5s;

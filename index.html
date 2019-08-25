@@ -18,9 +18,9 @@
                     <path fill="#C14744" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
                 </symbol>
                 <symbol id="icon-olas" viewBox="0 0 1000 300" preserveAspectRatio="none">
-                    <path fill="#c14744" d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path> 
-                    <path fill="#c14744" d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path> 
-                    <path fill="#c14744" d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path> 
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path> 
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
                 </symbol>
             </defs>
         </svg>
@@ -35,13 +35,9 @@
         <div class="header-center">
             <h1 class="header-title header-title-big">MasterJS</h1>
         </div>
-        <div class="header-right">           
-            <button class="login-button">
-                <a class="link" href="./views/login.html">login</a>
-            </button>
-            <button class="logout-button">
-                <a class="link" href="#">sing up</a>
-            </button>
+        <div class="header-right">         
+            <a class="link" href="./views/login.html"><button class="login-button bg-color-black">login</button></a>
+            <a class="link" href="#"><button class="logout-button bg-color-white">sing up</button></a>
         </div>
     </header>
 
@@ -61,21 +57,17 @@
                 </span>
             </a>
         </div>
-        <div class="waves-shape-wrap" data-front="" data-style="waves_opacity_alt" data-position="bottom" bis_skin_checked="1">
-            <svg class="waves-shape" ><use xlink:href="#icon-olas"></use></svg>
+        <div class="waves-shape-wrap" data-style="waves_opacity_alt" data-position="bottom" bis_skin_checked="1">
+            <svg class="waves-shape" fill="#C14744"><use xlink:href="#icon-olas"></use></svg>
         </div>
     </section>
 
     <section class="section section-tech">
         <div class="wrapper">
-            <p class="section-tech__text">section tech</p>            
+            <p class="section-tech__text">section tech</p>
         </div>
-        <div class="waves-shape-wrap" style="height:200px;" data-front="" data-style="waves_opacity_alt" data-position="bottom" bis_skin_checked="1">
-            <svg class="waves-shape" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">  
-                <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
-                <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path> 
-                <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
-            </svg>
+        <div class="waves-shape-wrap" data-style="waves_opacity_alt" data-position="bottom" bis_skin_checked="1">
+            <svg class="waves-shape" fill="#FFF"><use xlink:href="#icon-olas"></use></svg>
         </div>
     </section>
 

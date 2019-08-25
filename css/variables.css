@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+:root {
+    --font-size-main: 10px;
+    --font-size-logo: 1.5rem;
+    --font-size-nav: 1rem;
+    --font-size-title-section: 2rem;
+    --font-size-normal-button: 1rem;
+    --font-size-title-form: 2.5rem;
+    --font-size-input-form: 1rem;
+
+    --margin-little-button: 0 .2em;
+    --padding-little-button: .5em 1.2em;
+    --padding-input: .7em;
+    --margin-input: .5em;
+
+    --font-family-main: 'Fredoka One', cursive;
+    --font-family-logo: 'Times New Roman', Times, serif;
+    --bg-color-first: #000;
+    --bg-color-second: #C14744;
+    --bg-color-third: #FFF;
+    --bg-color-quarter: #ffc600;
+
+    --bg-color-shadow-quarter: #F3C010;
+    --border-color-input: #99B0F0;
+    --border-color-imput-focus: #4D78F0;    
+    --bg-color-input: rgba(160, 150, 150, 0.2);
+    --bg-color-popup: #1E8449;
+
+    --screen-extra-small: 480px;
+    --screen-small:       620px;
+    --screen-medium:      768px;
+    --screen-large:       1024px;
+    --screen-extra-large: 1280px;
+}
