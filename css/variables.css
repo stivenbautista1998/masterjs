@@ -2,20 +2,30 @@
 
 :root {
     --font-size-main: 10px;
-    --font-size-logo: 1.5rem;
-    --font-size-nav: 1rem;
-    --font-size-title-section: 2rem;
-    --font-size-normal-button: 1rem;
-    --font-size-title-form: 2.5rem;
-    --font-size-input-form: 1rem;
+    --font-size-extra-small: .7rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.5rem;
+    --font-size-large: 2rem;
+    --font-size-extra-large: 2.5rem;
 
-    --margin-little-button: 0 .2em;
-    --padding-little-button: .5em 1.2em;
-    --padding-input: .7em;
-    --margin-input: .5em;
+    --margin-list: auto 2em;
+    --margin-orizontal-center: 0 auto;
+    --margin-title-section: .3em 0;
+    --margin-normal: 1em;    
+    --margin-small: .5em;
+    --margin-normal-box: 1em .5em;
+    
+    --padding-none: 0;
+    --padding-extra-small: .5em;
+    --padding-small: .7em;
+    --padding-normal: 1em;
+    --padding-large: 2em;
+    --padding-extra-large: 3em;
+    --padding-normal-box: .5em 1em;
 
     --font-family-main: 'Fredoka One', cursive;
     --font-family-logo: 'Times New Roman', Times, serif;
+    --font-family-alternative: cursive;
     --bg-color-first: #000;
     --bg-color-second: #C14744;
     --bg-color-third: #FFF;
