@@ -11,8 +11,11 @@
     --margin-list: auto 2em;
     --margin-orizontal-center: 0 auto;
     --margin-title-section: .3em 0;
-    --margin-normal: 1em;    
+    --margin-normal: 1em;
+    --margin-middle: .8em;
     --margin-small: .5em;
+    --margin-extra-small: .3em;
+    --margin-movile: 0 .5em;
     --margin-normal-box: 1em .5em;
     
     --padding-none: 0;
