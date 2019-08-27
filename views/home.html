@@ -5,8 +5,8 @@
     <title>MasterJS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/svg-style.css">
+    <link rel="stylesheet" href="../css/styles/dashboard.css">
+    <link rel="stylesheet" href="../css/styles/svg-style.css">
     <script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body class="centrado-total">
@@ -17,10 +17,17 @@
                     <title>stack</title>
                     <path fill="#C14744" d="M32 10l-16-8-16 8 16 8 16-8zM16 4.655l10.689 5.345-10.689 5.345-10.689-5.345 10.689-5.345zM28.795 14.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398zM28.795 20.398l3.205 1.602-16 8-16-8 3.205-1.602 12.795 6.398z"></path>
                 </symbol>
-
                 <symbol id="icon-plus" viewBox="0 0 32 32">
                     <title>plus</title>
                     <path fill="#C14744" d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                </symbol>
+                <symbol id="icon-menu" viewBox="0 0 32 32">
+                    <title>menu</title>
+                    <path fill="#C14744" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                </symbol>
+                <symbol id="icon-search" viewBox="0 0 32 32">
+                    <title>search</title>
+                    <path fill="#C14744" d="M19.427 20.427c-1.39 0.99-3.090 1.573-4.927 1.573-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5c4.694 0 8.5 3.806 8.5 8.5 0 1.837-0.583 3.537-1.573 4.927l5.585 5.585c0.55 0.55 0.546 1.431-0 1.976l-0.023 0.023c-0.544 0.544-1.431 0.546-1.976 0l-5.585-5.585zM14.5 20c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5v0z"></path>
                 </symbol>
             </defs>
         </svg>
@@ -28,9 +35,19 @@
 
     <header class="header">
         <div class="header-left">
+            <div class="header-menu">
+                <button class="header__menu-button">
+                    <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
+                </button>            
+            </div>
             <h1 class="header-title">
                 <a class="link" href="../index.html">MasterJS</a>
             </h1>
+            <div class="header-icon-search">
+                <button class="header__menu-button">
+                    <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                </button>            
+            </div>
             <form class="header-form" action="/search" method="get">
                 <input class="header-search" type="text" value="" placeholder="search...">
             </form>

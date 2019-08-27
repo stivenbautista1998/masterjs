@@ -16,9 +16,9 @@
     height: 1.5em;
 }
 
-.icon-stack, .icon-menu {
-    width: 1.8em;
-    height: 1.8em;
+.icon-stack, .icon-menu, .icon-search {
+    width: 2em;
+    height: 2em;
 }
 
 .icon-enter, .icon-cancel-circle {

@@ -22,12 +22,6 @@ body {
     font-family: var(--font-family-logo);
 }
 
-.centrado-total {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .header {
     background-color: var(--bg-color-first);
     display: flex;
@@ -175,7 +169,7 @@ body {
 }
 
 .section-login {
-    background: #2d253a url("./image/font-login.jpg") no-repeat center bottom;
+    background: #2d253a url("../image/font-login.jpg") no-repeat center bottom;
     height: 100vh;
     display: flex;
     position: relative;
@@ -301,7 +295,6 @@ body {
     top: 9px;
 }
 
-
 @media screen and (min-width: 768px) {
     .icon-menu {
         visibility: hidden;
@@ -332,73 +325,6 @@ body {
     }
 
     /* ++++++++++++++++++++++++++++ */
-    
-    .header-form {
-        display: inline-block;
-        margin-left: 2em;
-    }
-    
-    .header-search {
-        width: 250px;
-        padding: var(--padding-small);
-        border: none;
-        border-radius: 3px;
-        text-transform: capitalize;
-        font-family: var(--font-family-main);
-    }
-    
-    .header__img {
-        width: 35px;
-        border-radius: 50%;
-        border: 2px solid var(--bg-color-second);
-        cursor: pointer;
-    }
-    
-    .header-nav {
-    
-    }
-    
-    .header__btn-add, .header__btn-projects {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .link {
-        text-decoration: none;
-        text-transform: capitalize;
-        color: var(--bg-color-second);
-    }
-    
-    .list {
-        list-style-type: none;
-        margin: var(--margin-list);
-        padding: var(--padding-none);
-    }
-    
-    .header-nav-list {
-        display: inline-block;
-        border: 1px solid;
-        text-align: center;
-        font-family: var(--font-family-main);
-        letter-spacing: .1em;
-        font-size: .8rem;
-    }
-    
-    .list-selected {
-        border: 1px solid var(--bg-color-third);
-    }
-    
-    .selected-item {
-        color: var(--bg-color-third);
-    }
-    
-    .header-nav-list-link {    
-        display: inline-block;
-        padding: var(--padding-extra-small);
-        font-weight: bold;
-        transition: 1s;
-    }
 
     /* ++++++++++++++++++++++++++++ */
     
