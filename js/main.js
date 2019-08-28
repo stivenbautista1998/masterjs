@@ -1,4 +1,5 @@
-var inputUser, inputPass, btnSend, btnCancel, divPopup, spanMessage, MessageIdTimeout;
+var inputUser, inputPass, btnSend, btnCancel, divPopup, spanMessage, MessageIdTimeout, 
+menuButton, menuMovile, closeBtn;
 
 function userValidate(e) {
     e.preventDefault();
@@ -38,8 +39,26 @@ function clickCancel(e) {
     location.href = "../index.html";
 }
 
+var handleClickMenuButton = () => {
+    menuMovile.classList.add("show-menu");
+    document.body.classList.add("static");
+};
+
+var handleClickColseButton = () => {
+    menuMovile.classList.remove("show-menu");
+    document.body.classList.remove("static");
+};
+
 window.onload = function() {
-    if(location.href.includes("login.html")) {
+    if(location.href.includes("index.html")) {
+        console.log("estoy en el index");
+        menuButton = document.getElementById("js-menu-btn");
+        menuMovile = document.getElementById("js-menu-movile");
+        closeBtn = document.getElementById("js-menu-close-btn");
+
+        menuButton.addEventListener('click', handleClickMenuButton);
+        closeBtn.addEventListener('click', handleClickColseButton)
+    } else if(location.href.includes("login.html")) {
         inputUser = document.getElementById("js-user");
         inputPass = document.getElementById("js-password");
         divPopup = document.getElementById("js-popup-content");
