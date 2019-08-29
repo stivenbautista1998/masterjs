@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/styles/svg-style.css">
     <script type="text/javascript" src="../js/main.js"></script>
 </head>
-<body class="centrado-total">
+<body>
     <div class="svg">
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
@@ -32,11 +32,22 @@
             </defs>
         </svg>
     </div>
-
+    <div id="js-wrapper-menu-movile" class="wrapper-menu-movile"></div>
+    <div id="js-menu-movile" class="menu-movile">
+        <div class="menu-movile__content-close">
+            <div class="btn-close">
+                <img class="header__img" src="../image/user.png" alt="usuario actual">
+                <span class="header__name-user">user name</span>
+            </div>
+        </div>
+        <div class="menu-movile__content-text">
+            <span class="menu-movile__text">we love develop ♥</span>
+        </div>
+    </div>
     <header class="header">
         <div class="header-left">
             <div class="header-menu">
-                <button class="header__menu-button">
+                <button id="js-menu-btn" class="header__menu-button">
                     <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
                 </button>            
             </div>
@@ -80,12 +91,5 @@
             </span>
         </div> 
     </div>
-    <footer class="footer-section">
-        <ul class="footer-section__list list">
-            <li class="footer-section__list-item">stiven bautista</li>            
-            <li class="footer-section__list-item">stivenb1994@gmail.com</li>
-            <li class="footer-section__list-item">copyright 2019 &copy; masterjs.com</li>
-        </ul>
-    </footer>
 </body>
 </html>

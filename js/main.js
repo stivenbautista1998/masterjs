@@ -1,5 +1,5 @@
-var inputUser, inputPass, btnSend, btnCancel, divPopup, spanMessage, MessageIdTimeout, 
-menuButton, menuMovile, closeBtn;
+var inputUser, inputPass, btnSend, btnCancel, divPopup, spanMessage, MessageIdTimeout,
+menuButton, menuMovile, closeBtn, wrapperMenuMovile;
 
 function userValidate(e) {
     e.preventDefault();
@@ -23,10 +23,10 @@ function userValidate(e) {
         vandera = false;
     }
 
-    if(vandera) {        
+    if(vandera) {
         spanMessage.innerText = mymessage;
         divPopup.classList.add("visible");
-                
+
         MessageIdTimeout = setTimeout(() => {
             divPopup.classList.remove("visible");
             spanMessage.innerText = ".";
@@ -41,35 +41,47 @@ function clickCancel(e) {
 
 var handleClickMenuButton = () => {
     menuMovile.classList.add("show-menu");
+    wrapperMenuMovile.classList.add("show-menu");
     document.body.classList.add("static");
 };
 
 var handleClickColseButton = () => {
     menuMovile.classList.remove("show-menu");
+    wrapperMenuMovile.classList.remove("show-menu");
     document.body.classList.remove("static");
+};
+
+var runMovileMenu = () => {
+    menuButton = document.getElementById("js-menu-btn");
+    menuMovile = document.getElementById("js-menu-movile");
+    wrapperMenuMovile = document.getElementById("js-wrapper-menu-movile");
+    // closeBtn = document.getElementById("js-menu-close-btn");
+
+    menuButton.addEventListener('click', handleClickMenuButton);
+    wrapperMenuMovile.addEventListener("click", handleClickColseButton);
+    // closeBtn.addEventListener('click', handleClickColseButton);
+};
+
+var runLogin = () => {
+    inputUser = document.getElementById("js-user");
+    inputPass = document.getElementById("js-password");
+    divPopup = document.getElementById("js-popup-content");
+    spanMessage = document.getElementById("js-popup-message");
+
+    btnSend = document.getElementById("js-btn-send");
+    btnCancel = document.getElementById("js-btn-cancel");
+    inputUser.focus();
+    btnSend.addEventListener('click', userValidate);
+    btnCancel.addEventListener('click', clickCancel);
 };
 
 window.onload = function() {
     if(location.href.includes("index.html")) {
-        console.log("estoy en el index");
-        menuButton = document.getElementById("js-menu-btn");
-        menuMovile = document.getElementById("js-menu-movile");
-        closeBtn = document.getElementById("js-menu-close-btn");
-
-        menuButton.addEventListener('click', handleClickMenuButton);
-        closeBtn.addEventListener('click', handleClickColseButton)
+        runMovileMenu();
+        console.log(wrapperMenuMovile);
     } else if(location.href.includes("login.html")) {
-        inputUser = document.getElementById("js-user");
-        inputPass = document.getElementById("js-password");
-        divPopup = document.getElementById("js-popup-content");
-        spanMessage = document.getElementById("js-popup-message");
-
-        btnSend = document.getElementById("js-btn-send");
-        btnCancel = document.getElementById("js-btn-cancel");
-        inputUser.focus();
-        btnSend.addEventListener('click', userValidate);
-        btnCancel.addEventListener('click', clickCancel);
+        runLogin();
     } else if(location.href.includes("home.html")) {
-        console.log("Estoy en home");
+        runMovileMenu();
     }
 }

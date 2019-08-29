@@ -30,3 +30,8 @@
     width: 4em;
     height: 4em;
 }
+
+.icon-twitter, .icon-vk, .icon-facebook, .icon-linkedin, .icon-youtube {
+    width: 3em;
+    height: 3em;
+}
